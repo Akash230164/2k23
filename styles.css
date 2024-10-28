@@ -31,15 +31,15 @@ body, html {
 }
 
 #page1 {
-  background-image: url("images/flower6.jpeg");
+  background-image: url("flower6.jpeg");
 }
 
 #page2 {
-  background-image: url("images/flower4.jpeg");
+  background-image: url("flower4.jpeg");
 }
 
 #page3 {
-  background-image: url("images/flower3.jpeg");
+  background-image: url("flower3.jpeg");
 }
 
 .hidden {
