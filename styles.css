@@ -1,0 +1,123 @@
+/* General page styling */
+body, html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f8;
+  overflow: hidden;
+}
+
+/* Card styling with full background images */
+.card {
+  position: absolute;
+  width: 350px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#page1 {
+  background-image: url("images/flower6.jpeg");
+}
+
+#page2 {
+  background-image: url("images/flower4.jpeg");
+}
+
+#page3 {
+  background-image: url("images/flower3.jpeg");
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.exit-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.enter-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+/* Text animation styles */
+.animate-text {
+  animation: fadeInUp 0.6s ease-out forwards, scaleUp 0.5s ease-in-out 0.3s forwards;
+  opacity: 0;
+}
+
+/* Fade-in and scale animations */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+      transform: scale(0.9);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+/* Content styling */
+.content h1, .content h2 {
+  font-family: 'Dancing Script', cursive;
+  color: red; /* Blush Pink */
+  margin-bottom: 10px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.content p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2em;
+    color: red /* Rosewood */
+  margin-bottom: 20px;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F7E7CE; /* Champagne */
+  color: red /* Deep warm red */
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: rgba(255, 75, 71, 0.9);
+}
+
+
+
+
+  
